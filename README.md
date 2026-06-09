@@ -74,6 +74,26 @@ YouTube pop-out chat:
 https://www.youtube.com/live_chat?v=VIDEO_ID&is_popout=1
 ```
 
+## Screenshots
+
+Open the dock from OBS:
+
+<p align="center">
+<img src="public/chatdock.png" width="640" alt="OBS Docks menu showing Chat">
+</p>
+
+Set the YouTube channel:
+
+<p align="center">
+<img src="public/setchannel.png" width="456" alt="Chat dock channel setup">
+</p>
+
+Chat running inside OBS:
+
+<p align="center">
+<img src="public/demo.png" width="900" alt="YouTube live chat running inside OBS">
+</p>
+
 ## Build Manual
 
 Linux:
@@ -109,7 +129,3 @@ The Windows binary distributed in `dist/windows/chat-dock.dll` was built for OBS
 ## Author
 
 Created and maintained by Adham Cabral.
-
-## License
-
-MIT License.
