@@ -109,3 +109,7 @@ The Windows binary distributed in `dist/windows/chat-dock.dll` was built for OBS
 ## Author
 
 Created and maintained by Adham Cabral.
+
+## License
+
+MIT License.
