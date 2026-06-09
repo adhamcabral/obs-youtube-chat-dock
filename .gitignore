@@ -1,0 +1,23 @@
+# Local build outputs
+build/
+build-*/
+build-flatpak/
+
+# Local build dependencies/tooling
+.deps/
+.windows-deps/
+aqtinstall.log
+
+# Local agent/tool state
+.agents/
+.codex/
+
+# Editor/IDE local files
+.vscode/
+.idea/
+*.user
+*.swp
+
+# OS local files
+.DS_Store
+Thumbs.db

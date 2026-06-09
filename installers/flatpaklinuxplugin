@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+exec flatpak run \
+	-v \
+	--devel \
+	--env=ROOT_DIR="$PWD" \
+	--env=BUILD_DIR="$PWD/build-flatpak" \
+	--env=PREFIX="$HOME/.var/app/com.obsproject.Studio/config/obs-studio/plugins" \
+	--command=sh \
+	com.obsproject.Studio \
+	-c '
+		set -e
+
+		if [ ! -f "$ROOT_DIR/CMakeLists.txt" ]; then
+			printf "Rode este instalador a partir da raiz do projeto.\n" >&2
+			exit 1
+		fi
+
+		cmake -S "$ROOT_DIR" -B "$BUILD_DIR" -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=/app
+		cmake --build "$BUILD_DIR" --config Release
+		cmake --install "$BUILD_DIR" --prefix "$PREFIX"
+
+		printf "Plugin instalado em: %s\n" "$PREFIX/chat-dock/bin/64bit/chat-dock.so"
+	'
