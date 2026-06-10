@@ -94,7 +94,7 @@ Chat running inside OBS:
 <img src="public/demo.png" width="900" alt="YouTube live chat running inside OBS">
 </p>
 
-## Build Manual
+## Manual Build
 
 Linux:
 
