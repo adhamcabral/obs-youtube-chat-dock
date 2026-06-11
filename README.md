@@ -1,4 +1,4 @@
-# OBS YouTube Chat Dock
+# OBS YouTube Chat Dock Plugin
 
 <div align="center">
 
