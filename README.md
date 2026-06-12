@@ -120,8 +120,8 @@ cmake -S . -B build -DCMAKE_PREFIX_PATH="/path/to/obs"
 
 ## Notes
 
-The plugin uses the public YouTube page to detect live streams. This avoids an
-API key, but it can break if YouTube changes the page HTML.
+The plugin uses the public YouTube page to detect live streams. 
+This avoids an API key, but it can break if YouTube changes the page HTML.
 
 The Windows binary distributed in `dist/windows/chat-dock.dll` was built for OBS
 32.x.
