@@ -59,7 +59,7 @@ Then open OBS:
 Docks > Chat
 ```
 
-Paste a link such as:
+Paste a channel link such as:
 
 ```txt
 https://www.youtube.com/@channel
